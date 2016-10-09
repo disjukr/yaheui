@@ -1,0 +1,21 @@
+[] # 오 마이 매직 매직 매직 마이 매직 매직 매직 어머어머어머 어머어머어머 유성매직
+
+번역(js) 실행인자
+***
+    return yaksokList([void 0, ...process.argv]);
+***
+
+번역(js) (결과코드)를 뱉으며 종료
+***
+    process.exit(결과코드 | 0);
+***
+
+번역(js) 표준출력에 (값) 쓰기
+***
+    process.stdout.write(값 ? 값.toString() : '');
+***
+
+번역(js) 표준오류에 (값) 쓰기
+***
+    process.stderr.write(값 ? 값.toString() : '');
+***

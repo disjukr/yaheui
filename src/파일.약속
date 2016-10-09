@@ -1,0 +1,4 @@
+번역(js) (경로) 텍스트 읽기
+***
+    return require('fs').readFileSync(경로, 'utf8');
+***

@@ -1,0 +1,53 @@
+[] # 익스플로오오전!!
+   # 아윽...
+
+번역(js) (배열)의 끝에/마지막에 (값) 넣기
+***
+    배열.push(값);
+***
+
+번역(js) (배열)의 끝에서/마지막에서 값 빼기
+***
+    if (배열 instanceof YaksokList) {
+        if (배열.길이 > 0) {
+            return 배열.pop();
+        }
+        return void 0;
+    } else {
+        return 배열.pop();
+    }
+***
+
+번역(js) (배열)의 시작에/처음에 (값) 넣기
+***
+    if (배열 instanceof YaksokList) {
+        배열.splice(1, 0, 값);
+    } else {
+        배열.unshift(값);
+    }
+***
+
+번역(js) (배열)의 시작에서/처음에서 값 빼기
+***
+    if (배열 instanceof YaksokList) {
+        if (배열.길이 > 0) {
+            return 배열.splice(1, 1)[0];
+        } else {
+            return void 0;
+        }
+    } else {
+        return 배열.shift();
+    }
+***
+
+번역(js) (배열)의 첫/처음/시작 항목
+***
+    if (배열 instanceof YaksokList) {
+        return 배열[1];
+    } else {
+        return 배열[0];
+    }
+***
+
+약속 (배열)의 마지막/끝 항목
+    결과: 배열[배열.길이]

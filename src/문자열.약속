@@ -1,0 +1,30 @@
+[] # yaksokList 런타임 끌어오는 매직
+   # 죽은코드 날리기 최적화에서 짤릴 가능성 있음
+   # 컴파일러 메타데이터 비스무리한거 구현해야함
+
+번역(js) (문자)의 코드포인트
+***
+    return 문자.charCodeAt(0);
+    // codePointAt
+***
+
+번역(js) (코드포인트)에 해당하는 문자
+***
+    return String.fromCharCode(코드포인트);
+    // fromCodePoint
+***
+
+번역(js) 줄바꿈 문자
+***
+    return '\n';
+***
+
+번역(js) (문자열) 줄바꿈마다 쪼개기
+***
+    return yaksokList([void 0, ...문자열.split(/\r?\n/g)]);
+***
+
+번역(js) (문자열) 글자마다 쪼개기
+***
+    return yaksokList([void 0, ...문자열.split('')]);
+***
